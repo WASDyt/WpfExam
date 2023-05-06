@@ -14,7 +14,7 @@ namespace WpfExam.Classes
         //        o номер группы;
         //        o успеваемость по пяти предметам(пять полей целого типа).
         string fio;
-        string nambers;
+        int nambers;
         string performance1;
         string performance2;
         string performance3;
@@ -25,7 +25,7 @@ namespace WpfExam.Classes
             get { return fio; }
             set { fio = value; }
         }
-        public string Nambers
+        public int Nambers
         {
             get { return nambers; }
             set { nambers = value; }
@@ -58,14 +58,14 @@ namespace WpfExam.Classes
         public ClassLibary()
         {
             fio = string.Empty;
-            nambers = string.Empty;
+            nambers = 0;
             performance1 = string.Empty;
             performance2 = string.Empty;
             performance3 = string.Empty;
             performance4 = string.Empty;
             performance5 = string.Empty;
         }
-        public ClassLibary(string f, string n, string p1, string p2, string p3, string p4, string p5)
+        public ClassLibary(string f, int n, string p1, string p2, string p3, string p4, string p5)
         {
             fio = f;
             nambers = n;
